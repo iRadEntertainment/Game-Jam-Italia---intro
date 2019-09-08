@@ -16,6 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Game Jam Italia - intro"
+run/main_scene="res://intro_scene/intro_scene.tscn"
 config/icon="res://icon.png"
 
 [rendering]

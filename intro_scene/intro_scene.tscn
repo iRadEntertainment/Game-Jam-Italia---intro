@@ -32,7 +32,7 @@ func _ready():
 	
 	# start the animations for the intro at the end of the splash screen timer
 	$intro_anim/tmr_splashscreen.wait_time = 1.5
-#	$intro_anim/tmr_splashscreen.start()
+	$intro_anim/tmr_splashscreen.start()
 	
 	#connect the finished animation of intro signal to _go_to_the_main_scene
 	$intro_anim.connect(\"animation_finished\",self,\"_go_to_the_main_scene\")
@@ -59,11 +59,10 @@ func _on_tmr_splashscreen_timeout():
 	play_animations()
 
 
-func _input(event):
-	if event is InputEventKey:
-		if event.is_pressed() and event.scancode == KEY_SPACE:
-			print(\"yess\")
-			play_animations()
+#func _input(event):
+#	if event is InputEventKey:
+#		if event.is_pressed() and event.scancode == KEY_SPACE:
+#			play_animations()
 
 "
 
